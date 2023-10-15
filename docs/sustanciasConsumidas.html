@@ -9,70 +9,123 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="estilos.css" />
   </head>
   <body>
-      <div class="row mt-5">
+    <div class="container mt-3">
+      <h2 class="mb-3 intro-title">Contexto:</h2>
+      <p class="intro-text">
+        En esta sección, analizaremos detenidamente los patrones de consumo de
+        sustancias en Costa Rica. Examina los niveles de prevalencia en los
+        últimos 12 meses de alcohol, tabaco y marihuana en diferentes años,
+        desde 1990 hasta 2015. Además, descubre el porcentaje de consumo en los
+        últimos 30 días de estas sustancias según distintos rangos de edad en el
+        año 2015. También exploraremos el porcentaje de jóvenes abstemios que
+        mostraron curiosidad por consumir diversas sustancias en 2018.
+      </p>
+      <p class="intro-text">
+        Cada gráfico ofrece una visión única de los datos, lo que te permitirá
+        comprender mejor los patrones de consumo de sustancias en Costa Rica a
+        lo largo de los años y entre diferentes grupos de edad. ¡Explora los
+        gráficos a continuación para obtener información detallada sobre este
+        importante tema de salud pública!
+      </p>
+      <br />
+      <!-- Primera Sección -->
+      <div class="row mt-3">
+        <!-- Cambié mt-5 a mt-3 -->
         <div class="col-md-12 text-center">
-          <div class="col-md-12 text-center">
-            <h2 class="h5">
-              Niveles de prevalencia en los últimos 12 meses de alcohol, tabaco
-              y marihuana 1990, 1995, 2000, 2006, 2010, 2015.
-            </h2>
-          </div>
+          <h2 class="h5">
+            Niveles de prevalencia en los últimos 12 meses de alcohol, tabaco y
+            marihuana 1990, 1995, 2000, 2006, 2010, 2015.
+          </h2>
         </div>
-        <div class="col-md-10 offset-md-1 mt-5">
+        <div class="col-md-10 offset-md-1 mt-3 chart-container">
+          <!-- Cambié mt-5 a mt-3 -->
           <canvas id="myChart2"></canvas>
         </div>
-        <div class="col-md-12 text-center mt-5">
+        <div class="col-md-10 text-center mt-3">
           <p>
             Fuente: VI Encuesta Nacional sobre consumo de drogas en población
             general, IAFA.
           </p>
         </div>
       </div>
-    </div>
-
-    <div class="container mt-5">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <div class="col-md-12 text-center">
-              <h2 class="h5">
-                Porcentaje de consumo en los últimos 30 días de alcohol, tabaco,
-                marihuana, según rangos de edad en el 2015.
-              </h2>
-            </div>
-          </div>
-          <div class="col-md-10 offset-md-1 mt-5">
-            <canvas id="myChart"></canvas>
-          </div>
-          <div class="col-md-12 text-center mt-5">
-            <p>
-              Fuente: VI Encuesta Nacional sobre consumo de drogas en población
-              general, IAFA.
-            </p>
-          </div>
-        </div>
-
-    <div class="row mt-5">
-      <div class="col-md-12 text-center">
+      <br />
+      <!-- Segunda Sección -->
+      <div class="row mt-3">
+        <!-- Cambié mt-5 a mt-3 -->
         <div class="col-md-12 text-center">
           <h2 class="h5">
-            PORCENTAJE DE JÓVENES ABSTEMIOS QUE INDICARON TENER CURIOSIDAD POR
-            CONSUMIR LAS DIFERENTES SUSTANCIAS. COSTA RICA, 2018.
+            Porcentaje de consumo en los últimos 30 días de alcohol, tabaco,
+            marihuana, según rangos de edad en el 2015.
           </h2>
         </div>
-        <div class="col-md-10 offset-md-1 mt-5">
+        <div class="col-md-10 offset-md-1 mt-3 chart-container">
+          <!-- Cambié mt-5 a mt-3 -->
+          <canvas id="myChart"></canvas>
+        </div>
+        <div class="col-md-10 text-center mt-3">
+          <p>
+            Fuente: VI Encuesta Nacional sobre consumo de drogas en población
+            general, IAFA.
+          </p>
+        </div>
+      </div>
+      <br />
+      <!-- Tercera Sección -->
+      <div class="row mt-3">
+        <!-- Cambié mt-5 a mt-3 -->
+        <div class="col-md-12 text-center">
+          <h2 class="h5">
+            Porcentaje de jóvenes abstemios que indicaron tener curiosidad por
+            consumir las diferentes sustancias. Costa Rica, 2018
+          </h2>
+        </div>
+        <div class="col-md-10 offset-md-1 mt-3 chart-container">
+          <!-- Cambié mt-5 a mt-3 -->
           <canvas id="myChart3"></canvas>
         </div>
-        <div class="col-md-12 text-center mt-5">
+        <div class="col-md-10 text-center mt-3">
           <p>
             Fuente: V encuesta nacional sobre consumo de drogas en población de
             secundaria 2018
           </p>
         </div>
       </div>
-    </div>
+      <br />
+      <h2 class="mb-3 intro-title">Referencias</h2>
 
+      <a
+        href="https://www.iafa.go.cr/wp-content/uploads/2022/05/Encuesta-Nacional-de-Drogas-2015.pdf"
+        target="_blank"
+        >Encuesta Nacional de Drogas 2015</a
+      ><br />
+
+      <a
+        href="https://www.iafa.go.cr/wp-content/uploads/2022/05/iafa-encuenstanacional-adolescentes-2019.pdf"
+        target="_blank"
+        >IAFA Encuesta Nacional de Adolescentes 2019</a
+      ><br />
+
+      <a
+        href="https://www.iafa.go.cr/wp-content/uploads/2022/05/17.INFORME-ESTUDIO-NACIONAL-2000-1.pdf"
+        target="_blank"
+        >Informe Estudio Nacional 2000</a
+      ><br />
+
+      <a
+        href="https://www.iafa.go.cr/wp-content/uploads/2022/05/15.ENCUESTA-NACIONAL-SOBRE-EL-CONSUMO-DE-DROGAS-en-Costa-Rica2006-1.pdf"
+        target="_blank"
+        >Encuesta Nacional sobre el Consumo de Drogas en Costa Rica 2006</a
+      ><br />
+
+      <a
+        href="https://www.iafa.go.cr/wp-content/uploads/2022/08/IAFA-AtlasDelConsumo2015.pdf"
+        target="_blank"
+        >IAFA Atlas del Consumo 2015</a
+      >
+    </div>
     <script>
       const ctx = document.getElementById("myChart").getContext("2d");
 
@@ -180,7 +233,7 @@
 
       const data3 = {
         labels: [
-          "Bebidas alcohólicas",
+          "Alcohol",
           "Marihuana",
           "Éxtasis",
           "Tabaco",
