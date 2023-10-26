@@ -1,0 +1,52 @@
+[
+  {
+    "categoria": "Salud y adicciones",
+    "pregunta": "¿Qué tipo de dependencia se refiere a la adaptación del cuerpo a la presencia de una droga?",
+    "respuesta": "Dependencia física",
+    "incorrecta1": "Dependencia psicológica",
+    "incorrecta2": "Dependencia comportamental",
+    "incorrecta3": "Dependencia social",
+    "imagen": "",
+    "objectFit": "cover"
+  },
+  {
+    "categoria": "Salud y adicciones",
+    "pregunta": "¿Qué tipo de dependencia se refiere a la necesidad emocional y mental de una droga?",
+    "respuesta": "Dependencia psicológica",
+    "incorrecta1": "Dependencia física",
+    "incorrecta2": "Dependencia comportamental",
+    "incorrecta3": "Dependencia social",
+    "imagen": "",
+    "objectFit": "cover"
+  },
+  {
+    "categoria": "Salud y adicciones",
+    "pregunta": "¿Qué tipo de dependencia está relacionada con los patrones de conducta y hábitos asociados al consumo de drogas?",
+    "respuesta": "Dependencia comportamental",
+    "incorrecta1": "Dependencia física",
+    "incorrecta2": "Dependencia psicológica",
+    "incorrecta3": "Dependencia crónica",
+    "imagen": "",
+    "objectFit": "cover"
+  },
+  {
+    "categoria": "Salud y adicciones",
+    "pregunta": "¿Cuál dependencia se refiere a la influencia del entorno social y las redes de relaciones en la adicción?",
+    "respuesta": "Dependencia social",
+    "incorrecta1": "Dependencia física",
+    "incorrecta2": "Dependencia comportamental",
+    "incorrecta3": "Dependencia psicológica",
+    "imagen": "",
+    "objectFit": "cover"
+  },
+  {
+    "categoria": "Salud y adicciones",
+    "pregunta": "¿Qué tipo de dependencia implica que una persona ha estado en un ciclo continuo de adicción durante un largo período de tiempo?",
+    "respuesta": "Dependencia crónica",
+    "incorrecta1": "Dependencia física",
+    "incorrecta2": "Dependencia comportamental",
+    "incorrecta3": "Dependencia social",
+    "imagen": "",
+    "objectFit": "cover"
+  }
+]

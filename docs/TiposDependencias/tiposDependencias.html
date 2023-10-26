@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Juego de preguntas</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+    <style>
+      body {
+        background: #3399cc; /* Fondo menos azul y más claro */
+        font-family: calibri; /* Tipografía */
+        font-size: 120%;
+      }
+
+      .numero {
+        color: white; /* Color de los títulos */
+        font-size: 24px; /* Tamaño adecuado para el contador */
+        font-weight: bold; /* Texto en negrita para destacar el contador */
+      }
+
+      /* Estilos para el botón cuando se pasa el cursor por encima */
+      .btn:hover {
+        transform: scale(1.05);
+        transition: all 0.3s;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <div class="puntaje" id="puntaje"></div>
+      <div class="card">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-8 text-left" id="categoria"></div>
+            <div class="col-4 text-right" id="numero"></div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="pregunta" id="pregunta"></div>
+          <img src="#" class="imagen img-fluid" id="imagen" />
+        </div>
+        <div class="card-footer">
+          <button
+            class="btn btn-light btn-block mb-2"
+            id="btn1"
+            onclick="oprimir_btn(0)"
+          ></button>
+          <button
+            class="btn btn-light btn-block mb-2"
+            id="btn2"
+            onclick="oprimir_btn(1)"
+          ></button>
+          <button
+            class="btn btn-light btn-block mb-2"
+            id="btn3"
+            onclick="oprimir_btn(2)"
+          ></button>
+          <button
+            class="btn btn-light btn-block mb-2"
+            id="btn4"
+            onclick="oprimir_btn(3)"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
