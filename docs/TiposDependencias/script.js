@@ -73,8 +73,6 @@ function escogerPregunta(n) {
   desordenarRespuestas(pregunta);
   if (pregunta.imagen) {
     select_id("imagen").setAttribute("src", pregunta.imagen);
-    style("imagen").height = "200px";
-    style("imagen").width = "100%";
   } else {
     style("imagen").height = "0px";
     style("imagen").width = "0px";

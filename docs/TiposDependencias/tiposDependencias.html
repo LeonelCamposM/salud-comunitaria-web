@@ -27,22 +27,44 @@
         transform: scale(1.05);
         transition: all 0.3s;
       }
+
+      .contenedor-de-la-imagen {
+        display: flex;
+        justify-content: center; /* Esto centrará los elementos hijos horizontalmente */
+        align-items: center;     /* Esto centrará los elementos hijos verticalmente */
+      }
+
+      .imagen {
+        width: 100%;  /* Esto garantizará que la imagen ocupe todo el ancho de su contenedor */
+        height: 100%; /* Esto ajustará la altura para que sea igual al ancho, haciendo la imagen cuadrada */
+        object-fit: cover; /* Esto cortará la imagen para que se ajuste al contenedor sin deformarse */
+      } 
+
+      @media screen and (min-width: 1024px) {
+      .imagen {
+        width: 50%;  /* o el tamaño que prefieras para laptops */
+        height: 50%; /* o el tamaño que prefieras para laptops */
+        margin: 0;
+      }
+}
     </style>
   </head>
 
   <body>
     <div class="container mt-4">
-      <div class="puntaje" id="puntaje"></div>
+      <div  style="display: none;" id="numero"></div>
       <div class="card">
         <div class="card-header">
           <div class="row">
             <div class="col-8 text-left" id="categoria"></div>
-            <div class="col-4 text-right" id="numero"></div>
+            <div class="col-4 text-right" id="puntaje"></div>
           </div>
         </div>
         <div class="card-body">
-          <div class="pregunta" id="pregunta"></div>
+          <div class="pregunta" id="pregunta"></div></br>
+        <div class="contenedor-de-la-imagen ">
           <img src="#" class="imagen img-fluid" id="imagen" />
+          </div>
         </div>
         <div class="card-footer">
           <button
