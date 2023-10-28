@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.97);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 30px;
@@ -84,6 +84,13 @@ h1 {
   margin: auto;
 }
 
+body {
+  padding: 0 4%; /* Esto crea un espacio a los lados */
+  background-image: url("https://leonelcamposm.github.io/salud-comunitaria-web/imgs/fondo.png");
+  background-repeat: repeat; /* Esto hará que tu patrón se repita en ambas direcciones */
+  background-size: auto; /* Esto mantiene el tamaño original de la imagen */
+  background-position: top left; /* Asegura que el patrón comience desde la esquina superior izquierda */
+}
 /* Estilos específicos para dispositivos móviles */
 @media only screen and (max-width: 768px) {
   /* 768px es un punto de corte común para tablets y móviles */
@@ -103,5 +110,23 @@ h1 {
   img {
     max-width: 100%;
     height: auto;
+  }
+
+  .section {
+    height: auto;
+  }
+
+  body {
+    padding: 0 4%; /* Esto crea un espacio a los lados */
+    background-image: url("https://leonelcamposm.github.io/salud-comunitaria-web/docs/imgs/fondo.png");
+    background-repeat: repeat; /* Esto hará que tu patrón se repita en ambas direcciones */
+    background-size: auto; /* Esto mantiene el tamaño original de la imagen */
+    background-position: top left; /* Asegura que el patrón comience desde la esquina superior izquierda */
+  }
+
+  .container {
+    margin: 0;
+    padding: 0 4%;
+    background-color: rgba(255, 255, 255, 0.97);
   }
 }

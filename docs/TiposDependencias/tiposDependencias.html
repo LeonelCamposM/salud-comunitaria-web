@@ -9,11 +9,14 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="https://leonelcamposm.github.io/salud-comunitaria-web/docs/estilos.css" />
     <style>
+
       body {
-        background: #3399cc; /* Fondo menos azul y más claro */
-        font-family: calibri; /* Tipografía */
-        font-size: 120%;
+          padding: 0 4%; /* Esto crea un espacio a los lados */
+          background-image: url("https://leonelcamposm.github.io/salud-comunitaria-web/docs/imgs/fondo.png");
+          background-size: cover;
+          background-position: center center;
       }
 
       .numero {
@@ -51,9 +54,8 @@
   </head>
 
   <body>
-    <div class="container mt-4">
       <div  style="display: none;" id="numero"></div>
-      <div class="card">
+      <div class="container mt-4">
         <div class="card-header">
           <div class="row">
             <div class="col-8 text-left" id="categoria"></div>
@@ -90,25 +92,32 @@
         </div>
       </div>
     </br>
-      <div class="card">
-        <div class="card-header">
-          <div class="row">
-            <h2 class="mb-2 intro-title">Referencias</h2>
-          </div>
-        </div>
-        <div class="card-body">
-          <a
-          href="https://www.iafa.go.cr/wp-content/uploads/2022/05/Encuesta-Nacional-de-Drogas-2015.pdf"
-          target="_blank">Encuesta Nacional de Drogas 2015 
-        </a>
-        </div>
-      </div>
-    </br>
-  
-  
+    <div class="container mt-4">
+    <h2 class="mb-3 intro-title">Referencias</h2>
+    <ol>
+        <li>
+          <a href="https://www.redalyc.org/pdf/3684/368445247019.pdf" target="_blank">
+            Díaz, L.; Botta, Vicente, B.; Arza, M.; Moráguez, G. y Ferrer, S. (2008). Drogodependencia: un problema de salud contemporáneo. Ciencias Médicas de Camagüey, 12(2), Santiago Cuba.
+          </a>
+        </li>
+        <li>
+          <a href="https://www.msdmanuals.com/home/drugs/drug-dynamics/site-selectivity#v715597" target="_blank">
+            Farinde, A. (2022, setiembre). Site Selectivity. MSD Manual.
+          </a>
+        </li>
+        <li>
+          <a href="https://web.vocespara.info/comparte/2017_vcs/Drogodependencias_y_adicciones/OK_Terminos_en_adiciion.pdf " target="_blank">
+            Martín del Moral, M. y Lorenzo, P. (2017). Conceptos fundamentales en drogodependencias.
+          </a>
+        </li>
+        <li>
+          <a href="https://www.unodc.org/documents/bolivia/Prev_Problematica_de_las_drogas.pdf" target="_blank">
+            Moscoso, A. J. y Titto, O. M. (2015). Problemáticas de las drogas. Editorial Quatro Hnos.: Bolivia.
+          </a>
+        </li>
+      </ol>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

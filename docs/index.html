@@ -4,96 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conozca más sobre el uso de sustancias</title>
-    <!-- Enlace a Bootstrap -->
     <link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="stylesheet" href="estilos.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
 
   <body>
     <div class="container mt-4">
-      <h2 class="mb-3 intro-title">¿Qué son las drogas?</h2>
-      <p class="intro-text">
-        Son sustancias que pueden ser naturales o sintéticas, que al consumir
-        pueden provocar alteraciones psicológicas, físicas y emocionales en una
-        persona. Aunque algunas se emplean con fines médicos para tratar,
-        prevenir o diagnosticar enfermedades, muchas veces se utilizan de manera
-        perjudicial y recreativa tanto para el individuo como para su entorno.
-      </p>
-    </div>
-    <br />
-    <div class="video-container">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/JndZ3y-KVLQ?si=RmNWX00LfeZXuwgu"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <div class="container mt-5">
-      <h2 class="mb-3" style="color: #006699">
-        Conozca más sobre el uso de sustancias
+      <h2 class="animate__animated animate__fadeInDown mb-3 intro-title">
+        ¿Qué son las drogas?
       </h2>
-
-      <div class="custom-list-group p-3">
-        <div class="list-content">
-          <img class="list-image" src="imgs/sistemaRecompensa.png" />
-          <a href="sistemaRecompensa.html"
-            >Cómo interactúa el sistema de recompensa del cerebro con el uso de
-            drogas</a
-          >
-        </div>
+      <!-- Podemos también animar el texto para que se desplace hacia arriba al cargarse. -->
+      <p class="animate__animated animate__fadeInUp intro-text">
+        Son sustancias que pueden ser naturales o sintéticas, que al consumirse
+        pueden provocar alteraciones psicológicas, físicas y emocionales en una
+        persona.
+      </p>
+      <!-- Aplicamos una animación al contenedor del video. -->
+      <div class="video-container animate__animated animate__zoomIn">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/JndZ3y-KVLQ?si=RmNWX00LfeZXuwgu"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
       </div>
-
-      <div class="custom-list-group p-3">
-        <div class="list-content">
-          <img class="list-image" src="imgs/tiposDependencias.png" />
-          <a href="TiposDependencias/tiposDependencias.html"
-            >Tipos de dependencia asociados al uso de sustancias psicoactivas</a
-          >
-        </div>
-      </div>
-
-      <div class="custom-list-group p-3">
-        <div class="list-content">
-          <img class="list-image" src="imgs/tolerancia.png" />
-          <a href="tolerancia.html">Tipos de tolerancia al consumo de drogas</a>
-        </div>
-      </div>
-
-      <div class="custom-list-group p-3">
-        <div class="list-content">
-          <img class="list-image" src="imgs/sustanciasConsumidas.png" />
-          <a href="sustanciasConsumidas.html"
-            >Sustancias más consumidas en el país durante los últimos años</a
-          >
-        </div>
-      </div>
-
-      <div class="custom-list-group p-3">
-        <div class="list-content">
-          <img class="list-image" src="imgs/variacionesPsicosociales.png" />
-          <a href="variacionesPsicosociales.html"
-            >Variaciones psicosociales, que podrían influir en el uso de
-            sustancias</a
-          >
-        </div>
+      <div
+        class="redirect-button-container"
+        style="padding: 20px; text-align: center"
+      >
+        <!-- El botón redirige a 'list.html'. -->
+        <!-- Aquí se han agregado estilos en línea para cambiar el color de fondo y el color del texto del botón. -->
+        <!-- Asegúrate de reemplazar '#34a853' con tu propio valor de color si quieres otro color. -->
+        <a
+          href="list.html"
+          class="btn"
+          role="button"
+          style="
+            background-color: #006699;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+          "
+          >Ver más</a
+        >
       </div>
     </div>
-    <br />
 
-    <!-- Scripts de Bootstrap y JQuery (necesario para Bootstrap) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <br />
+    <br />
+    <br />
+    <br />
   </body>
 </html>
