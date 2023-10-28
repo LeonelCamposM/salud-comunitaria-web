@@ -86,7 +86,7 @@ h1 {
 
 body {
   padding: 0 4%; /* Esto crea un espacio a los lados */
-  background-image: url("https://leonelcamposm.github.io/salud-comunitaria-web/imgs/fondo.png");
+  background-image: url("https://leonelcamposm.github.io/salud-comunitaria-web/imgs/fondo.gif");
   background-repeat: repeat; /* Esto hará que tu patrón se repita en ambas direcciones */
   background-size: auto; /* Esto mantiene el tamaño original de la imagen */
   background-position: top left; /* Asegura que el patrón comience desde la esquina superior izquierda */
@@ -118,7 +118,7 @@ body {
 
   body {
     padding: 0 4%; /* Esto crea un espacio a los lados */
-    background-image: url("https://leonelcamposm.github.io/salud-comunitaria-web/imgs/fondo.png");
+    background-image: url("https://leonelcamposm.github.io/salud-comunitaria-web/imgs/fondo.gif");
     background-repeat: repeat; /* Esto hará que tu patrón se repita en ambas direcciones */
     background-size: auto; /* Esto mantiene el tamaño original de la imagen */
     background-position: top left; /* Asegura que el patrón comience desde la esquina superior izquierda */
