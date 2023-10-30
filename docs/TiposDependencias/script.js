@@ -35,7 +35,6 @@ function escogerPreguntaAleatoria() {
       n = 0;
     }
     if (npreguntas.length == interprete_bp.length) {
-      //Aquí es donde el juego se reinicia
       if (mostrar_pantalla_juego_términado) {
         swal.fire({
           title: "Juego finalizado",
@@ -121,8 +120,6 @@ function oprimir_btn(i) {
     suspender_botones = false;
   }, 3000);
 }
-
-// let p = prompt("numero")
 
 function reiniciar() {
   for (const btn of btn_correspondiente) {
