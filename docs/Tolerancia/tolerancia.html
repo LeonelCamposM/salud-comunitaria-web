@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tolerancia al consumo de drogas</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://leonelcamposm.github.io/salud-comunitaria-web/estilos.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <style>
+    #toleranceCarousel {
+        max-width: 800px;
+        margin: 0 auto; /* Esto centra el carrusel horizontalmente en la página */
+    }
+    #toleranceCarousel .carousel-inner img {
+        max-height: 400px; /* Ajusta a tu preferencia */
+        width: auto; /* Mantiene la proporción de la imagen */
+        display: block; /* Asegura que la imagen se muestre en bloque */
+        margin: 0 auto; /* Centra la imagen horizontalmente */
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 60px;
+      width: 50px;
+      background-color: #006699; /* Fondo blanco sólido */
+      border-radius: 60%; /* Hace que los botones sean redondos */
+      display: flex; /* Centra el ícono en el botón */
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+  <body>
+    <div class="container mt-3">
+      <h2  id= "specificTitleId" class="mb-3 intro-title">Tolerancia al consumo de drogas</h2>
+      <div id="toleranceCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <!-- Slide 1 - Tolerancia innata -->
+                <div class="carousel-item active" data-title="Título 1" data-paragraph="Este es el primero que se ve (el del item activo) Este es un párrafo sobre la tolerancia innata111111111">
+                <div class="text-center">
+                    <img src="https://raw.githubusercontent.com/LeonelCamposM/salud-comunitaria-web/main/docs/imgs/Confianza.png" alt="Tolerancia innata" />
+                </div>
+                </div>
+            
+                <!-- Slide 2 - Segunda imagen -->
+                <div class="carousel-item " data-title="Título para la segunda imagen" data-paragraph="Este es un párrafo sobre la tolerancia innata.">
+                <div class="text-center">
+                    <img src="https://raw.githubusercontent.com/LeonelCamposM/salud-comunitaria-web/main/docs/imgs/fondo.png" alt="Segunda imagen" />
+                </div>
+                </div>
+                <!-- Aquí, puedes agregar más slides para otros tipos de tolerancia. -->
+            </div>
+          <a
+            class="carousel-control-prev"
+            href="#toleranceCarousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#toleranceCarousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </a>
+        </div>
+        <br />
+      </div>
+    </div>
+
+    <div class="container mt-3">
+        <p id="specificParagraphId" class="mb-3 intro-paragraph">
+            Este es el primero que se ve (el del item activo) Este es un párrafo sobre la tolerancia innata111111111
+        </p>
+    </div>
+
+    <div class="container mt-3">
+      <h2 class="mb-3 intro-title">Referencias</h2>
+      <ol>
+        <li>
+          <a
+            href="https://www.redalyc.org/pdf/3684/368445247019.pdf"
+            target="_blank"
+          >
+            Díaz, L.; Botta, Vicente, B.; Arza, M.; Moráguez, G. y Ferrer, S.
+            (2008). Drogodependencia: un problema de salud contemporáneo.
+            Ciencias Médicas de Camagüey, 12(2), Santiago Cuba.
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.msdmanuals.com/home/drugs/drug-dynamics/site-selectivity#v715597"
+            target="_blank"
+          >
+            Farinde, A. (2022, setiembre). Site Selectivity. MSD Manual.
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://web.vocespara.info/comparte/2017_vcs/Drogodependencias_y_adicciones/OK_Terminos_en_adiciion.pdf "
+            target="_blank"
+          >
+            Martín del Moral, M. y Lorenzo, P. (2017). Conceptos fundamentales
+            en drogodependencias.
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.unodc.org/documents/bolivia/Prev_Problematica_de_las_drogas.pdf"
+            target="_blank"
+          >
+            Moscoso, A. J. y Titto, O. M. (2015). Problemáticas de las drogas.
+            Editorial Quatro Hnos.: Bolivia.
+          </a>
+        </li>
+      </ol>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
