@@ -9,13 +9,58 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player("myVideo");
 }
 
+function showNormalBird() {
+  console.log("normal bird");
+  // Establece tus puntos de inicio y finalización en segundos
+  var startSecond = 14; // por ejemplo, empezar en el segundo 30
+  var endSecond = 26; // por ejemplo, finalizar en el segundo 60
+
+  // Establece el punto de inicio y comienza la reproducción
+  player.seekTo(startSecond);
+  player.playVideo();
+
+  // Calcula cuánto tiempo debe transcurrir antes de detener el video
+  var duration = (endSecond - startSecond) * 1000; // en milisegundos
+
+  // Detiene el video después de la duración especificada
+  setTimeout(function () {
+    player.pauseVideo();
+  }, duration);
+}
+
+function showLowSelfEsteemWithFriendsOnDrugs() {
+  console.log("LowSelfEsteemWithFriendsOnDrugs bird");
+}
+
+function showHighSelfEsteemWithHighConfidence() {
+  console.log("HighSelfEsteemWithFriendsOnDrugs bird");
+}
+
 document.getElementById("analyzeButton").addEventListener("click", function () {
-  console.log("click");
+  console.log("Ver consecuencias presionado");
+
   var autoestimaValue = document.getElementById("autoestimaRange").value;
   var confianzaValue = document.getElementById("confianzaRange").value;
+  var amigosValue = document.getElementById("amigosDrogas").checked;
 
-  player.seekTo(30); // Iniciar desde el segundo 30
-  player.playVideo(); // Comenzar la reproducción
+  console.log(confianzaValue);
+  console.log(autoestimaValue);
+  console.log(amigosValue);
+
+  // Evaluación de condiciones
+  if (autoestimaValue == "1" && amigosValue) {
+    showLowSelfEsteemWithFriendsOnDrugs();
+  } else if (autoestimaValue == "3" && !amigosValue && confianzaValue == "3") {
+    showHighSelfEsteemWithHighConfidence();
+  } else if (confianzaValue == "1" && amigosValue) {
+    showLowConfidenceWithFriendsOnDrugs();
+  } else if (autoestimaValue == "2" && confianzaValue == "2") {
+    // Solo muestra el pájaro normal si autoestima y confianza están en un nivel normal.
+    showNormalBird();
+  } else {
+    // Por defecto, muestra el pájaro con baja confianza y amigos en drogas.
+    showLowConfidenceWithFriendsOnDrugs();
+  }
 });
 
 // Obtén referencia de la barra de autoestima
