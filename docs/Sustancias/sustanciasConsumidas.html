@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumo de Sustancias por Rango de Edad en Costa Rica - 2015</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://leonelcamposm.github.io/salud-comunitaria-web/estilos.css"
+    />
+  </head>
+
+  <body>
+    <div id="fullpage">
+      <!-- Introducción -->
+      <div class="section">
+        <div class="container mt-3">
+          <br />
+          <h2 class="mb-3 intro-title">Tendencias de consumo en Costa Rica</h2>
+          <p class="intro-text">
+            Cada gráfico ofrece una visión única de los datos, lo que te
+            permitirá comprender mejor los patrones de consumo de sustancias en
+            Costa Rica a lo largo de los años y entre diferentes grupos de edad.
+          </p>
+          <br />
+        </div>
+      </div>
+
+      <!-- Gráfico 1 -->
+      <div class="section">
+        <div class="container">
+          <br />
+          <h2 class="h5 text-center">
+            Niveles de prevalencia en los últimos 12 meses de alcohol, tabaco y
+            marihuana 1990, 1995, 2000, 2006, 2010, 2015.
+          </h2>
+          <div class="chart-container mt-3">
+            <canvas id="myChart2"></canvas>
+          </div>
+          <p class="text-center mt-3">
+            Fuente: VI Encuesta Nacional sobre consumo de drogas en población
+            general, IAFA.
+          </p>
+          <br />
+        </div>
+      </div>
+
+      <!-- Gráfico 2 -->
+      <div class="section">
+        <div class="container">
+          <br />
+          <h2 class="h5 text-center">
+            Porcentaje de consumo en los últimos 30 días de alcohol, tabaco,
+            marihuana, según rangos de edad en el 2015.
+          </h2>
+          <div class="chart-container mt-3">
+            <canvas id="myChart"></canvas>
+          </div>
+          <p class="text-center mt-3">
+            Fuente: VI Encuesta Nacional sobre consumo de drogas en población
+            general, IAFA.
+          </p>
+          <br />
+        </div>
+      </div>
+
+      <!-- Gráfico 3 -->
+      <div class="section">
+        <div class="container">
+          <br />
+          <h2 class="h5 text-center">
+            Porcentaje de jóvenes abstemios que indicaron tener curiosidad por
+            consumir las diferentes sustancias. Costa Rica, 2018
+          </h2>
+          <div class="chart-container mt-3">
+            <canvas id="myChart3"></canvas>
+          </div>
+          <p class="text-center mt-3">
+            Fuente: V encuesta nacional sobre consumo de drogas en población de
+            secundaria 2018
+          </p>
+          <br />
+        </div>
+      </div>
+
+      <!-- Referencias -->
+      <div class="section">
+        <div class="container">
+          <h2 class="mb-3 intro-title">Referencias</h2>
+          <ol>
+            <li>
+              <a
+                href="https://www.iafa.go.cr/wp-content/uploads/2022/05/Encuesta-Nacional-de-Drogas-2015.pdf"
+                target="_blank"
+                >Instituto sobre Alcoholismo y Farmacodependencia (IAFA).
+                (2015). Encuesta Nacional de Drogas.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.iafa.go.cr/wp-content/uploads/2022/05/iafa-encuenstanacional-adolescentes-2019.pdf"
+                target="_blank"
+                >Instituto sobre Alcoholismo y Farmacodependencia (IAFA).
+                (2019). Encuesta Nacional de Adolescentes.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.iafa.go.cr/wp-content/uploads/2022/05/17.INFORME-ESTUDIO-NACIONAL-2000-1.pdf"
+                target="_blank"
+                >Instituto sobre Alcoholismo y Farmacodependencia (IAFA).
+                (2000). Informe Estudio Nacional.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.iafa.go.cr/wp-content/uploads/2022/05/15.ENCUESTA-NACIONAL-SOBRE-EL-CONSUMO-DE-DROGAS-en-Costa-Rica2006-1.pdf"
+                target="_blank"
+                >Instituto sobre Alcoholismo y Farmacodependencia (IAFA).
+                (2006). Encuesta Nacional sobre el Consumo de Drogas en Costa
+                Rica.</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.iafa.go.cr/wp-content/uploads/2022/08/IAFA-AtlasDelConsumo2015.pdf"
+                target="_blank"
+                >Instituto sobre Alcoholismo y Farmacodependencia (IAFA).
+                (2015). Atlas del Consumo.</a
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Inicialización de fullPage.js
+      new fullpage("#fullpage", {
+        navigation: true,
+        scrollBar: true,
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
