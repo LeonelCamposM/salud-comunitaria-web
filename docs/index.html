@@ -14,40 +14,41 @@
     />
     <link rel="stylesheet" href="estilos.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <style>
+      .video-container {
+        text-align: center; /* Asegurarse de que los elementos internos estén centrados. */
+      }
+      .video-container img {
+        display: inline-block; /* Hacer que la imagen se comporte como un elemento en línea para ser afectada por text-align */
+        margin: 0 auto; /* centrado horizontal en caso de que esté usando un grid o flex layout */
+      }
+      .redirect-button-container {
+        text-align: center; /* Centrar elementos en línea o en línea-bloque horizontalmente */
+        padding: 20px;
+      }
+    </style>
   </head>
 
   <body>
     <div class="container mt-4">
       <h2 class="animate__animated animate__fadeInDown mb-3 intro-title">
-        ¿Qué son las drogas?
+        Entendiendo las Drogas: Impacto y Consecuencias
       </h2>
       <!-- Podemos también animar el texto para que se desplace hacia arriba al cargarse. -->
       <p class="animate__animated animate__fadeInUp intro-text">
-        Son sustancias que pueden ser naturales o sintéticas, que al consumirse
-        pueden provocar alteraciones psicológicas, físicas y emocionales en una
-        persona.
+        El consumo de drogas y sustancias psicoactivas tiene un profundo impacto
+        en la sociedad y el individuo. En esta página, exploramos cómo el
+        cerebro interactúa con estas sustancias, las formas de dependencia y
+        tolerancia, y los factores psicosociales relacionados. Sumérgete en esta
+        temática para comprender mejor sus múltiples dimensiones.
       </p>
-      <br />
-      <!-- Aplicamos una animación al contenedor del video. -->
+
       <div class="video-container animate__animated animate__zoomIn">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/JndZ3y-KVLQ?si=RmNWX00LfeZXuwgu"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
+        <img src="imgs/cerebro.png" alt="Imagen 1" />
+        <br />
       </div>
       <br />
-      <div
-        class="redirect-button-container"
-        style="padding: 20px; text-align: center"
-      >
-        <!-- El botón redirige a 'list.html'. -->
-        <!-- Aquí se han agregado estilos en línea para cambiar el color de fondo y el color del texto del botón. -->
-        <!-- Asegúrate de reemplazar '#34a853' con tu propio valor de color si quieres otro color. -->
+      <div class="redirect-button-container" style="padding: 20px">
         <a
           href="list.html"
           class="btn"
@@ -64,5 +65,6 @@
         >
       </div>
     </div>
+    <br />
   </body>
 </html>

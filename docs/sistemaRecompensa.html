@@ -1,136 +1,208 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
   <head>
+    <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Drogas, felicidad y tristeza en el sistema de recompensa</title>
+    <title>Juego de preguntas</title>
     <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="estilos.css" />
+  
+    <style>
+      /* Estilos para los acordeones */
+      .accordion {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+      }
+      .accordion-item {
+        background-color: #006699;
+        border: 1px solid #006699;
+        margin: 5px;
+        border-radius: 10px;
+      }
+      .accordion-title {
+        background-color: #12a4f3;
+        color: #fff;
+        padding: 15px;
+        cursor: pointer;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .accordion-content {
+        background-color: #fff;
+        padding: 15px;
+        display: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: #000; /* Color de texto en negro */
+      }
+      .accordion-image {
+        max-width: 70%;
+        height: auto;
+        border-radius: 10%; /* Redondear la imagen */
+        display: block;
+        margin: 0 auto; /* Centrar la imagen */
+      }
+      .large-image {
+        max-width: 100%; /* Asegura que la imagen ocupe el ancho máximo disponible */
+        height: auto; /* Mantén la proporción de aspecto original */
+        border-radius: 10%; /* Redondear la imagen */
+        display: block;
+        margin: 0 auto; /* Centrar la imagen */
+        width: 900px; /* Establece el ancho deseado (ajusta según tus necesidades) */
+      }
+      .small-image {
+        max-width: 50%; /* Ajusta el porcentaje según el tamaño deseado */
+        height: auto;
+        display: block;
+        margin: 0 auto; /* Centrar la imagen */
+      }
+      .info-popup {
+        display: none;
+        position: absolute;
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
-    <div class="container mt-3">
-      <h2 class="mb-3 intro-title">
-        Drogas, felicidad y tristeza en el sistema de recompensa. La realidad
-        del por qué pensar bien el consumo de drogas.
-      </h2>
-      <br />
-      <h2 class="mb-2">¿Cómo afectan al organismo?</h2>
-      <p class="intro-text">
-        El cerebro, como el regulador de las funciones básicas del cuerpo
-        humano, le permite interpretar y responder a todo lo que experimentamos
-        y moldea el comportamiento, en la interacción consigo mismo a partir de
-        las neuronas organizadas en circuitos y redes, y con su entorno.
-      </p>
-      <div class="text-center">
-        <img
-          src="https://www.esan.edu.pe/images/blog/20230317/71DdV3.jpg"
-          alt="Descripción de la imagen"
-          width="400"
-          height="300"
-        />
-      </div>
-      <br />
-      <h2 class="mb-2">
-        El sistema de recompensa al combinar drogas, comportamientos y hábitos.
-      </h2>
-      <p class="intro-text">
-        El consumo crónico de drogas altera el sistema de recompensa del cerebro
-        y conduce a una disminución de la liberación de dopamina en respuesta a
-        estímulos naturales. Esta disminución de la dopamina natural puede
-        resultar en la incapacidad de sentir placer en actividades que
-        normalmente serían gratificantes, y en una búsqueda compulsiva de drogas
-        para aliviar la sensación de vacío, lo que contribuye a la pérdida de
-        interés y desbalance químico.
-      </p>
-      <p class="intro-text">
-        Te explicamos esto un poco más: en el cerebro, uno de los circuitos de
-        comunicación y conexión con el cuerpo humano son los ganglios basales.
-        Estos ganglios basales están relacionados con el aprendizaje de acuerdo
-        al sistema de recompensa y hábitos determinantes del comportamiento.
-        Este sistema gestiona naturalmente lo que es bueno para el cuerpo y cómo
-        continuar haciéndolo para su supervivencia. Por eso, aquí te detallamos
-        los efectos en el sistema de recompensa y el balance en el cuerpo.
-      </p>
-      <br />
-      <div class="text-center">
-        <img
-          src="https://nida.nih.gov/sites/default/files/images/soa_brains_pleasure_sp2.jpg"
-          alt="Descripción de la imagen"
-          width="700"
-          height="300"
-        />
-      </div>
-
-      <h3 class="mb-2">Efectos en el Sistema de Recompensa</h3>
-      <p class="intro-text">
-        Aumento artificial de dopamina: Cuando se consumen drogas, muchas de
-        ellas desencadenan la liberación masiva de dopamina en el circuito de
-        recompensa del cerebro, creando una intensa sensación de placer o
-        euforia.
-      </p>
-
-      <p class="intro-text">
-        Refuerzo de comportamiento: La dopamina está relacionada con el refuerzo
-        del comportamiento. Cuando el cerebro experimenta un evento placentero,
-        como consumir drogas, libera dopamina para recordar esa experiencia y
-        motivar a la persona a repetirla.
-      </p>
-      <br />
-      <h3 class="mb-2">Tolerancia</h3>
-      <p class="intro-text">
-        Adaptación del cerebro: Con el tiempo y el consumo continuo de drogas,
-        el cerebro se adapta y se vuelve menos sensible a la dopamina. Para
-        mantener la misma sensación de euforia, se necesita consumir cantidades
-        cada vez mayores de la droga. Esto se conoce como tolerancia.
-      </p>
-      <br />
-      <h3 class="mb-2">Disminución de la Dopamina Natural</h3>
-      <p class="intro-text">
-        Desregulación de la dopamina: La exposición constante a drogas hace que
-        el sistema de recompensa se desregule, lo que significa que la dopamina
-        natural liberada en respuesta a actividades y recompensas cotidianas se
-        reduce.
-      </p>
-      <br />
-      <h3 class="mb-2">Pérdida de Interés y Significado</h3>
-      <p class="intro-text">
-        Anhedonia: La anhedonia es la incapacidad de sentir placer en
-        actividades que normalmente serían gratificantes. Debido a la
-        disminución de la liberación de dopamina en respuesta a recompensas
-        naturales, las personas que abusan de las drogas pueden experimentar
-        anhedonia, lo que lleva a la pérdida de interés y significado en la
-        vida. Ya que no encuentran satisfacción en actividades que antes
-        disfrutaban, como pasar tiempo con amigos, comer o practicar
-        pasatiempos.
-      </p>
-      <br />
-      <h3 class="mb-2">Búsqueda compulsiva de drogas</h3>
-      <p class="intro-text">
-        La desregulación del sistema de recompensa hace que la persona busque de
-        manera compulsiva las drogas, ya que son la única fuente de dopamina
-        capaz de generar algún placer. Esto puede llevar a una disminución de
-        las relaciones sociales, el desinterés en metas personales y la pérdida
-        de sentido de la vida.
-      </p>
-
-      <div class="text-center mb-3">
-        <img
-          src="https://imagenes.elpais.com/resizer/yu2_l2R8rJCjNyCyI_GAgeiYJGk=/980x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/JBBNQKPCFJDU7L2JC4T43WTP2M.jpg"
-          alt="Descripción de la imagen"
-          width="400"
-          height="300"
-        />
-      </div>
-      <h2 class="mb-3 intro-title">Referencias</h2>
-
-      <a
-        href="https://www.iafa.go.cr/wp-content/uploads/2022/05/Encuesta-Nacional-de-Drogas-2015.pdf"
-        target="_blank"
-        >Encuesta Nacional de Drogas 2015</a
-      ><br />
+  <div class="container mt-4">
+    <h3 id="main-title">
+      El Sistema de Recompensa: Cómo las Drogas, Comportamientos y Hábitos
+      Impactan en tu Cerebro
+    </h3>
+    <div class="info-popup" id="main-title-popup">
+      Entender las decisiones de un consumo responsable son vitales para
+      entender nuestro cuerpo, felicidad y comportamiento.
     </div>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <div class="accordion-title">¿Qué son las drogas? 💊</div>
+        <div class="accordion-content">
+          Sustancias, naturales o sintéticas, que pueden causar alteraciones
+          psicológicas, físicas y emocionales en una persona. A menudo se usan
+          recreativamente, lo que puede ser perjudicial para el individuo y su
+          entorno, a pesar de su uso médico legítimo.
+          <img
+            src="https://img.freepik.com/vector-premium/ilustracion-vector-concepto-abstracto-abuso-drogas-recetadas_107173-20800.jpg?w=826"
+            alt="Imagen 1"
+            class="accordion-image"
+          />
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title">¿Cómo afectan a nuestro organismo? 👥</div>
+        <div class="accordion-content">
+          El uso de drogas puede tener efectos en varios aspectos de la salud,
+          incluyendo el bienestar físico y mental, así como impactos sociales y
+          económicos. Es importante estar informado sobre los riesgos asociados
+          y tomar decisiones conscientes en relación con el consumo de
+          sustancias.
+          <p></p>
+          <img
+            src="https://nida.nih.gov/sites/default/files/images/soa_brains_pleasure_sp2.jpg"
+            alt="Imagen 1"
+            class="accordion-image large-image"
+          />
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title">En nuestro cerebro 🧠</div>
+        <div class="accordion-content">
+          Afectan al cerebro que regula las funciones y conexiones básicas del
+          cuerpo humano, todo lo que interpretamos y experimentamos, moldeando
+          el comportamiento con el entorno.
+          <p></p>
+          <img
+            src="https://www.esan.edu.pe/images/blog/20230317/71DdV3.jpg"
+            alt="Imagen 1"
+            class="accordion-image"
+          />
+        </div>
+      </div>
+      <p></p>
+      <h3 id="main-title">
+        El Sistema de Recompensa: un hack que tiene consecuencias
+      </h2>
+      <div class="accordion-item">
+        <div class="accordion-title">Dopamina en el cuerpo y cerebro ❤️</div>
+        <div class="accordion-content">
+          <ul>
+            <li>
+              La dopamina refuerza el comportamiento al asociar eventos
+              placenteros con la motivación para repetirlos.
+            </li>
+            <li>
+              Con el tiempo, la tolerancia a la dopamina disminuye, lo que
+              requiere dosis mayores para sentir euforia.
+            </li>
+          </ul>
+
+          <p></p>
+          <img
+            src="https://media.tenor.com/3gyWdbIMFGcAAAAC/bob-esponja-no-la-necesito.gif"
+          />
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-title">Exposición constante a drogas🚀</div>
+        <div class="accordion-content">
+          <ul>
+            <li>
+              La exposición constante a drogas reduce la liberación de dopamina
+              natural en respuesta a recompensas cotidianas, lo que puede llevar
+              la incapacidad de sentir placer en actividades normales.
+            </li>
+            <li>Afectando las relaciones sociales y metas personales.</li>
+          </ul>
+
+          <p></p>
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/012/983/681/non_2x/unhappy-couple-ignore-talking-after-fight-or-misunderstanding-stubborn-man-and-woman-avoid-communication-after-quarrel-breakup-and-relationship-problems-free-vector.jpg"
+            class="small-image"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</br>
+<div class="container mt-4">
+  <h2 class="mb-3 intro-title">Referencias</h2>
+  <ol>
+      <li>
+        <a href="https://www.redalyc.org/journal/6382/638268502010/638268502010.pdf" target="_blank">
+          Valdés Iglesia, A. J., Vento Lezcano, C. A., & Hernández Martínez, D. (n.d.). Drogas,
+          un problema de salud mundial. 
+        </a>
+      </li>
+  </ol>
+</div>
+    <script>
+      // Agregar funcionalidad para mostrar/ocultar contenido al hacer clic en el título
+      const accordionItems = document.querySelectorAll(".accordion-item");
+
+      accordionItems.forEach((item) => {
+        const title = item.querySelector(".accordion-title");
+        const content = item.querySelector(".accordion-content");
+
+        title.addEventListener("click", () => {
+          content.style.display =
+            content.style.display === "none" ? "block" : "none";
+        });
+      });
+    </script>
   </body>
 </html>
