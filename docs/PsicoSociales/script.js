@@ -1,68 +1,3 @@
-// Cargar la API de YouTube IFrame
-var tag = document.createElement("script");
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName("script")[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player("myVideo");
-}
-
-function showNormalBird() {
-  console.log("normal bird");
-  // Establece tus puntos de inicio y finalización en segundos
-  var startSecond = 14; // por ejemplo, empezar en el segundo 30
-  var endSecond = 26; // por ejemplo, finalizar en el segundo 60
-
-  // Establece el punto de inicio y comienza la reproducción
-  player.seekTo(startSecond);
-  player.playVideo();
-
-  // Calcula cuánto tiempo debe transcurrir antes de detener el video
-  var duration = (endSecond - startSecond) * 1000; // en milisegundos
-
-  // Detiene el video después de la duración especificada
-  setTimeout(function () {
-    player.pauseVideo();
-  }, duration);
-}
-
-function showLowSelfEsteemWithFriendsOnDrugs() {
-  console.log("LowSelfEsteemWithFriendsOnDrugs bird");
-}
-
-function showHighSelfEsteemWithHighConfidence() {
-  console.log("HighSelfEsteemWithFriendsOnDrugs bird");
-}
-
-document.getElementById("analyzeButton").addEventListener("click", function () {
-  console.log("Ver consecuencias presionado");
-
-  var autoestimaValue = document.getElementById("autoestimaRange").value;
-  var confianzaValue = document.getElementById("confianzaRange").value;
-  var amigosValue = document.getElementById("amigosDrogas").checked;
-
-  console.log(confianzaValue);
-  console.log(autoestimaValue);
-  console.log(amigosValue);
-
-  // Evaluación de condiciones
-  if (autoestimaValue == "1" && amigosValue) {
-    showLowSelfEsteemWithFriendsOnDrugs();
-  } else if (autoestimaValue == "3" && !amigosValue && confianzaValue == "3") {
-    showHighSelfEsteemWithHighConfidence();
-  } else if (confianzaValue == "1" && amigosValue) {
-    showLowConfidenceWithFriendsOnDrugs();
-  } else if (autoestimaValue == "2" && confianzaValue == "2") {
-    // Solo muestra el pájaro normal si autoestima y confianza están en un nivel normal.
-    showNormalBird();
-  } else {
-    // Por defecto, muestra el pájaro con baja confianza y amigos en drogas.
-    showLowConfidenceWithFriendsOnDrugs();
-  }
-});
-
 // Obtén referencia de la barra de autoestima
 const autoestimaRange = document.getElementById("autoestimaRange");
 
@@ -110,3 +45,92 @@ function updateConfianzaLabel() {
       break;
   }
 }
+
+// Esperar a que el DOM esté listo
+document.addEventListener("DOMContentLoaded", function () {
+  // Agregar listener para el control de rango de autoestima
+  document
+    .getElementById("autoestimaRange")
+    .addEventListener("input", function () {
+      updateAutoestima(this.value);
+    });
+
+  // Agregar listener para el control de rango de confianza
+  document
+    .getElementById("confianzaRange")
+    .addEventListener("input", function () {
+      updateConfianza(this.value);
+    });
+
+  // Agregar listener para el checkbox de amigos que usan drogas
+  document
+    .getElementById("amigosDrogas")
+    .addEventListener("change", function () {
+      updateAmigosDrogas(this.checked);
+    });
+
+  // Función para actualizar autoestima
+  function updateAutoestima(value) {
+    var imagenSrc, descripcion;
+    switch (value) {
+      case "1":
+        imagenSrc = "autoestima_baja.jpg";
+        descripcion =
+          "Una autoestima baja puede hacer que el individuo busque refugio o consuelo en sustancias, viéndolas como una forma temporal de elevar su ánimo o de escapar de sentimientos de inferioridad o tristeza.";
+        break;
+      case "2":
+        imagenSrc = "autoestima_normal.jpg";
+        descripcion =
+          "Con una autoestima equilibrada, el individuo tiende a tener una percepción sana de sí mismo, reduciendo la necesidad de recurrir a sustancias como medio de escape o afirmación.";
+        break;
+      case "3":
+        imagenSrc = "autoestima_alta.jpg";
+        descripcion =
+          "Una autoestima muy alta puede hacer que el individuo sienta que puede experimentar con sustancias sin caer en la dependencia, pensando que tiene el control total sobre la situación.";
+        break;
+    }
+    document.querySelector("#autoestimaImagen img").src = imagenSrc;
+    document.getElementById("autoestimaDescripcion").textContent = descripcion;
+  }
+
+  // Función para actualizar confianza
+  function updateConfianza(value) {
+    var imagenSrc, descripcion;
+    switch (value) {
+      case "1":
+        imagenSrc = "confianza_baja.jpg"; // Reemplazar con la ruta de tu imagen para confianza baja
+        descripcion =
+          "Una baja confianza podría llevar al individuo a consumir sustancias como una forma de sentirse más seguro en situaciones sociales, pensando que las drogas o el alcohol pueden ayudarle a ´soltarse´ o encajar mejor.";
+        break;
+      case "2":
+        imagenSrc = "confianza_normal.jpg"; // Reemplazar con la ruta de tu imagen para confianza normal
+        descripcion =
+          "Con un nivel de confianza medio, el individuo suele ser consciente de los riesgos y beneficios y tiene una probabilidad menor de ceder a presiones externas o de recurrir a sustancias para sentirse mejor.";
+        break;
+      case "3":
+        imagenSrc = "confianza_alta.jpg"; // Reemplazar con la ruta de tu imagen para confianza alta
+        descripcion =
+          "Una confianza excesiva podría llevar al individuo a pensar que puede controlar cualquier situación, incluido el consumo experimental de sustancias, creyendo que es capaz de manejarlo sin problemas.";
+        break;
+    }
+    document.querySelector("#confianzaImagen img").src = imagenSrc;
+    document.getElementById("confianzaDescripcion").textContent = descripcion;
+  }
+
+  // Función para actualizar amigos que usan drogas
+  function updateAmigosDrogas(checked) {
+    var imagenSrc, descripcion;
+    if (checked) {
+      imagenSrc = "amigos_usan_drogas.jpg";
+      descripcion =
+        "Estar rodeado de amigos que consumen drogas aumenta significativamente la exposición y la posibilidad de probar o consumir regularmente, debido a la normalización del consumo en su entorno y la presión social.";
+    } else {
+      imagenSrc = "sin_amigos_drogas.jpg";
+      descripcion =
+        "Sin la presión o exposición a las drogas de parte de su círculo cercano, es menos probable que el individuo decida experimentar o consumir sustancias.";
+    }
+    document.querySelector("#amigosDrogasImagen img").src = imagenSrc;
+    document.getElementById("amigosDrogasDescripcion").textContent =
+      descripcion;
+  }
+});
