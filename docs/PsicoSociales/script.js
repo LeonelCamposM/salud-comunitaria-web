@@ -98,17 +98,20 @@ document.addEventListener("DOMContentLoaded", function () {
     var imagenSrc, descripcion;
     switch (value) {
       case "1":
-        imagenSrc = "confianza_baja.jpg"; // Reemplazar con la ruta de tu imagen para confianza baja
+        imagenSrc =
+          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/confianza_baja.png"; // Reemplazar con la ruta de tu imagen para confianza baja
         descripcion =
           "Una baja confianza podría llevar al individuo a consumir sustancias como una forma de sentirse más seguro en situaciones sociales, pensando que las drogas o el alcohol pueden ayudarle a ´soltarse´ o encajar mejor.";
         break;
       case "2":
-        imagenSrc = "confianza_normal.jpg"; // Reemplazar con la ruta de tu imagen para confianza normal
+        imagenSrc =
+          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/confianza_normal.png"; // Reemplazar con la ruta de tu imagen para confianza normal
         descripcion =
           "Con un nivel de confianza medio, el individuo suele ser consciente de los riesgos y beneficios y tiene una probabilidad menor de ceder a presiones externas o de recurrir a sustancias para sentirse mejor.";
         break;
       case "3":
-        imagenSrc = "confianza_alta.jpg"; // Reemplazar con la ruta de tu imagen para confianza alta
+        imagenSrc =
+          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/confianza_alta.png"; // Reemplazar con la ruta de tu imagen para confianza alta
         descripcion =
           "Una confianza excesiva podría llevar al individuo a pensar que puede controlar cualquier situación, incluido el consumo experimental de sustancias, creyendo que es capaz de manejarlo sin problemas.";
         break;
