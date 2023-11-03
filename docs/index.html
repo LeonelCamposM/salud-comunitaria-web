@@ -26,6 +26,14 @@
         text-align: center; /* Centrar elementos en línea o en línea-bloque horizontalmente */
         padding: 20px;
       }
+
+      @media screen and (min-width: 1024px) {
+        .imagen {
+          width: 50%; /* o el tamaño que prefieras para laptops */
+          height: 50%; /* o el tamaño que prefieras para laptops */
+          margin: 0;
+        }
+      }
     </style>
   </head>
 
@@ -44,7 +52,7 @@
       </p>
 
       <div class="video-container animate__animated animate__zoomIn">
-        <img src="imgs/cerebro.png" alt="Imagen 1" />
+        <img class="imagen img-fluid" src="imgs/cerebro.png" alt="Imagen 1" />
         <br />
       </div>
       <br />
