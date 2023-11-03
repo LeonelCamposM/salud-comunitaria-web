@@ -75,19 +75,19 @@ document.addEventListener("DOMContentLoaded", function () {
     switch (value) {
       case "1":
         imagenSrc =
-          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/autoestima_baja.jpg";
+          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/autoestima_baja.png";
         descripcion =
           "Una autoestima baja puede hacer que el individuo busque refugio o consuelo en sustancias, viéndolas como una forma temporal de elevar su ánimo o de escapar de sentimientos de inferioridad o tristeza.";
         break;
       case "2":
         imagenSrc =
-          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/autoestima_normal.jpg";
+          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/autoestima_normal.png";
         descripcion =
           "Con una autoestima equilibrada, el individuo tiende a tener una percepción sana de sí mismo, reduciendo la necesidad de recurrir a sustancias como medio de escape o afirmación.";
         break;
       case "3":
         imagenSrc =
-          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/autoestima_alta.jpg";
+          "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/autoestima_alta.png";
         descripcion =
           "Una autoestima muy alta puede hacer que el individuo sienta que puede experimentar con sustancias sin caer en la dependencia, pensando que tiene el control total sobre la situación.";
         break;
