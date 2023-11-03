@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", function () {
         imagenSrc =
           "https://leonelcamposm.github.io/salud-comunitaria-web/imgs/confianza_baja.png"; // Reemplazar con la ruta de tu imagen para confianza baja
         descripcion =
-          "Una baja confianza podría llevar al individuo a consumir sustancias como una forma de sentirse más seguro en situaciones sociales, pensando que las drogas o el alcohol pueden ayudarle a ´soltarse´ o encajar mejor.";
+          "Una baja confianza podría llevar al individuo a consumir sustancias como una forma de sentirse más seguro en situaciones sociales, pensando que las drogas pueden ayudarle a ´soltarse´ o encajar mejor.";
         break;
       case "2":
         imagenSrc =
