@@ -15,19 +15,18 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
   </head>
 
   <style>
     #toleranceCarousel {
-        max-width: 800px;
-        margin: 0 auto; /* Esto centra el carrusel horizontalmente en la página */
+      max-width: 800px;
+      margin: 0 auto; /* Esto centra el carrusel horizontalmente en la página */
     }
     #toleranceCarousel .carousel-inner img {
-        max-height: 400px; /* Ajusta a tu preferencia */
-        width: auto; /* Mantiene la proporción de la imagen */
-        display: block; /* Asegura que la imagen se muestre en bloque */
-        margin: 0 auto; /* Centra la imagen horizontalmente */
+      max-height: 400px; /* Ajusta a tu preferencia */
+      width: auto; /* Mantiene la proporción de la imagen */
+      display: block; /* Asegura que la imagen se muestre en bloque */
+      margin: 0 auto; /* Centra la imagen horizontalmente */
     }
 
     .carousel-control-prev-icon,
@@ -40,28 +39,223 @@
       justify-content: center;
       align-items: center;
     }
+
+    #imagenAmpliada {
+      cursor: pointer;
+    }
+    #imagenAmpliada.ampliada {
+      width: 100%;
+      height: 98%;
+      position: fixed;
+      top: 1%;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      z-index: 999;
+    }
   </style>
 
   <body>
     <div class="container mt-3">
-      <h2  id= "specificTitleId" class="mb-3 intro-title">Tolerancia al consumo de drogas</h2>
+      <h2 class="mb-3 intro-title">Tipos de tolerancia al consumo de drogas</h2>
+      <h3>¿Qué es la tolerancia?</h3>
+      <p class="intro-text">
+        En términos generales, corresponde al estado de adaptación del cuerpo,
+        en la cual se percibe una disminución de los efectos de la misma
+        cantidad de droga consumida, debido a su uso constante. Lo que conlleva
+        a la necesidad de aumentar las dosis administradas para conseguir el
+        mismo grado de efecto.
+      </p>
+      <div class="text-center">
+        <img
+          src="tolerancia-img/tol vs con.jpeg"
+          alt="Descripción de la imagen"
+          width="400"
+          height="300"
+          id="imagenAmpliada"
+        />
+      </div>
+
+      <h3>Síndrome de abstinencia aguda</h3>
+      <p class="intro-text">
+        Manifestaciones tanto clínicas, psíquicas y físicas producto de
+        suspender el consumo de cierta droga y que incita a continuar su
+        administración para aliviar los malestares provocados.
+      </p>
+      <div class="text-center">
+        <img
+          src="https://mas-vida-psicologos-benalmadena.com/wp-content/uploads/2023/03/imagen-destacada-scaled.jpg"
+          alt="Descripción de la imagen"
+          width="400"
+          height="300"
+        />
+      </div>
+
+      <p class="intro-text">
+        Estos dos factores mencionados anteriormente son los componentes
+        principales que ocasionan la
+        <strong>dependencia física</strong> hacia este tipo de sustancias
+        adictivas.
+      </p>
+    </div>
+
+    <div class="container mt-3">
+      <h2 id="specificTitleId" class="mb-3 intro-title">
+        Perspectiva del individuo: Tolerancia innata
+      </h2>
       <div id="toleranceCarousel" class="carousel slide">
-            <div class="carousel-inner">
-                <!-- Slide 1 - Tolerancia innata -->
-                <div class="carousel-item active" data-title="Título 1" data-paragraph="Este es el primero que se ve (el del item activo) Este es un párrafo sobre la tolerancia innata111111111">
-                <div class="text-center">
-                    <img src="https://raw.githubusercontent.com/LeonelCamposM/salud-comunitaria-web/main/docs/imgs/Confianza.png" alt="Tolerancia innata" />
-                </div>
-                </div>
-            
-                <!-- Slide 2 - Segunda imagen -->
-                <div class="carousel-item " data-title="Título para la segunda imagen" data-paragraph="Este es un párrafo sobre la tolerancia innata.">
-                <div class="text-center">
-                    <img src="https://raw.githubusercontent.com/LeonelCamposM/salud-comunitaria-web/main/docs/imgs/fondo.png" alt="Segunda imagen" />
-                </div>
-                </div>
-                <!-- Aquí, puedes agregar más slides para otros tipos de tolerancia. -->
+        <div class="carousel-inner">
+          <!-- Slide 1 - Tolerancia innata -->
+          <div
+            class="carousel-item active"
+            data-title="Perspectiva del individuo: Tolerancia innata"
+            data-paragraph="Se produce cuando existe una disminución de la sensibilidad de una persona hacia los efectos de una sustancia, 
+                desde el momento de la primera administración de dicha sustancia. Generalmente corresponde al primer factor de riesgo en el desarrollo de una dependencia temprana."
+            data-paragraph2=""
+            data-paragraph3=""
+            data-paragraph4=""
+            data-paragraph5=""
+          >
+            <div class="text-center">
+              <img
+                src="https://nyulangone.org/news/sites/default/files/styles/hero/public/2019-07/press-release-people-try-drugs-for-the-first-time-in-the-summer.jpg?h=49c49730&itok=l6cJZjw7"
+                alt="Tolerancia innata"
+              />
             </div>
+          </div>
+
+          <!-- Slide 2 - Tolerancia adquirida: -->
+          <div
+            class="carousel-item"
+            data-title="Perspectiva del individuo: Tolerancia adquirida farmacocinética"
+            data-paragraph="Se generan cambios en la distribución o metabolismo de la droga después de consumir repetidas veces, 
+                lo que reduce su concentración en la sangre y las áreas de acción. Es decir, el cuerpo se adapta y 
+                aprende a procesar la droga con mayor rapidez y eficiencia."
+            data-paragraph2="Con frecuencia la propia inducción enzimática de la droga consumida estimula el aumento de la síntesis de enzimas 
+                microsomales hepáticas (hígado), haciendo que la eliminación de la droga del cuerpo sea más rápida.
+                Además, con este aumento de la eficacia al descomponer la sustancia, se reduce la formación de metabolitos activos 
+                de la droga, disminuyendo así la biodisponibilidad y eficacia de esta."
+            data-paragraph3=""
+            data-paragraph4=""
+            data-paragraph5=""
+          >
+            <div class="text-center">
+              <img
+                src="https://www.mashed.com/img/gallery/how-long-does-alcohol-last-after-you-open-the-bottle/intro-1657033923.webp"
+                alt="farmacocinética"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div
+            class="carousel-item"
+            data-title="Perspectiva del individuo: Tolerancia adquirida farmacodinámica"
+            data-paragraph="Son los cambios de naturaleza adaptativa de los sistemas biológicos que son afectadas por las drogas,
+                luego de un consumo continuo de estas. Es decir, la respuesta fisiológica a la droga disminuye y el cuerpo es 
+                menos sensible a los efectos producidos."
+            data-paragraph2="¿POR CUÁLES RAZONES OCURRE?"
+            data-paragraph3="Disminución de la densidad o sensibilidad de los receptores: hay menos zonas 
+                donde la droga pueda actuar o las zonas existentes pierden sensibilidad hacia los efectos de esta."
+            data-paragraph4="Receptores pierden capacidad para conectarse a los sistemas de traducción de señales:
+                se debilita la señal que envía la sustancia al cuerpo para generar un estímulo."
+            data-paragraph5="Mensajeros químicos o proteínas encargadas del envío de señales: cambios en su afinidad y funcionalidad
+                en el envío de señales en el cuerpo alteran las reacciones fisiológicas (ejemplos: el 2º mensajero o las proteínas G)."
+          >
+            <div class="text-center">
+              <img
+                src="https://www.bluecrestrc.com/wp-content/uploads/2017/10/The-Effects-of-Drugs-on-the-Human-Brain.jpeg"
+                alt="farmacodinámica"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 4 - Tolerancia adquirida: -->
+          <div
+            class="carousel-item"
+            data-title="Perspectiva del individuo: Tolerancia adquirida aprendida"
+            data-paragraph="Se desarrolla un aprendizaje de la respuesta adaptativa, en donde el cuerpo, mediante la relación de las señales ambientales,
+                  se prepara con antelación para contrarrestar los efectos de la droga. Así disminuyendo la intensidad de la respuesta fisiológica hacia el estímulo 
+                  de la sustancia."
+            data-paragraph2="Una señal ambiental corresponde a cualquier acción previa a consumir la sustancia, como por ejemplo:"
+            data-paragraph3="Los olores al preparar la droga, ver la jeringuilla, consumir la droga siempre en un mismo lugar, estados de ánimo, situaciones recurrentes o personas, entre otros."
+            data-paragraph4="Aún no existe una razón fisiológica del porqué ocurre, pero se conjetura que es el resultado del intento inconsciente del cuerpo a contrarrestar 
+                los efectos de la droga."
+            data-paragraph5=""
+          >
+            <div class="text-center">
+              <img src="tolerancia-img/senalambiental.png" alt="aprendida" />
+            </div>
+          </div>
+
+          <!-- Slide 5 - Tolerancia aguda: -->
+          <div
+            class="carousel-item"
+            data-title="Perspectiva de la sustancia: Tolerancia aguda"
+            data-paragraph="Se produce de forma precoz debido a la administración continua de una sustancia en periodos de tiempo cortos 
+                  entre dosis, debido a eventos sociales, como fiestas. Esto provoca que el cuerpo se adapte a los efectos de la droga en 
+                  un menor tiempo a medida que recibe dosis sucesivas. Así disminuyendo gradualmente la intensidad de la respuesta e 
+                  induciendo a la necesidad de consumir dosis en mayores cantidades."
+            data-paragraph2=""
+            data-paragraph3=""
+            data-paragraph4=""
+            data-paragraph5=""
+          >
+            <div class="text-center">
+              <img
+                src="https://as2.ftcdn.net/v2/jpg/00/56/75/01/1000_F_56750162_Ce4wQ7ZWp18ZgIBsvd8mT6zRrnpfMOGP.jpg"
+                alt="aguda"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 6 - Tolerancia invertida: -->
+          <div
+            class="carousel-item"
+            data-title="Perspectiva de la sustancia: Tolerancia invertida"
+            data-paragraph="Se produce de forma precoz debido a la administración continua de una sustancia en periodos de tiempo cortos 
+                  entre dosis, debido a eventos sociales, como fiestas. Esto provoca que el cuerpo se adapte a los efectos de la droga en 
+                  un menor tiempo a medida que recibe dosis sucesivas. Así disminuyendo gradualmente la intensidad de la respuesta e 
+                  induciendo a la necesidad de consumir dosis en mayores cantidades."
+            data-paragraph2="Ciertas drogas pueden producir un efecto igual o más acentuado utilizando dosis menores,
+                debido a la acumulación de la sustancia en determinados tejidos y su progresiva liberación o   
+                por la incapacidad del cuerpo de metabolizar dicha sustancia."
+            data-paragraph3="El caso de los alcohólicos es el ejemplo más común de este tipo de tolerancia, ya que debido a su progresiva 
+                hepatopía (deterioro del hígado), hay una disminución de las enzimas que metabolizan el alcohol, lo que resulta 
+                en manifestaciones de intoxicación aguda con pequeñas dosis."
+            data-paragraph4="Cabe destacar que NO es lo mismo a la SENSIBILIZACIÓN, este último hace referencia a la generación 
+                de los mismos efectos o más acentuados con dosis iguales o menores y se desarrolla con el 
+                consumo de la droga en intervalos prologados de tiempo entre cada dosis.
+                El caso más usual es la persona que consume cocaína. El caso más usual es la persona que consume cocaína."
+            data-paragraph5=""
+          >
+            <div class="text-center">
+              <img
+                src="https://www.adictalia.es/wp-content/uploads/2022/08/higado-graso.jpg"
+                alt="invertida"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 7 - Tolerancia cruzada o recíproca: -->
+          <div
+            class="carousel-item"
+            data-title="Perspectiva de la sustancia: Tolerancia cruzada o recíproca"
+            data-paragraph="Esta se desarrolla cuando el consumidor que ya presenta una tolerancia hacia una droga, se 
+                  vuelve tolerante hacia los efectos de otra que actúa de forma similar."
+            data-paragraph2="Suele aparecer con drogas pertenecientes a un mismo grupo farmacológico o que poseen 
+                mecanismos de acción idénticos o análogos. Un ejemplo está presente en la heroína, la cual tiene tolerancia cruzada con cualquier 
+                fármaco opiáceo con afinidad hacia los receptores mi (µ)."
+            data-paragraph3=""
+            data-paragraph4=""
+            data-paragraph5=""
+          >
+            <div class="text-center">
+              <img
+                src="https://www.narconon-mexico.org/FURL/imagecache/cropfit@w=710/blob/images/articles/5/0/506315b0-56a0-11e7-912e-00221930697d/heroina.jpg"
+                alt="recíproca"
+              />
+            </div>
+          </div>
           <a
             class="carousel-control-prev"
             href="#toleranceCarousel"
@@ -84,9 +278,20 @@
     </div>
 
     <div class="container mt-3">
-        <p id="specificParagraphId" class="mb-3 intro-paragraph">
-            Este es el primero que se ve (el del item activo) Este es un párrafo sobre la tolerancia innata111111111
-        </p>
+      <p id="specificParagraphId" class="mb-3 intro-paragraph">
+        Se produce cuando existe una disminución de la sensibilidad de una
+        persona hacia los efectos de una sustancia, desde el momento de la
+        primera administración de dicha sustancia. Generalmente corresponde al
+        primer factor de riesgo en el desarrollo de una dependencia temprana.
+      </p>
+
+      <p id="specificParagraphId2" class="mb-3 intro-paragraph"></p>
+
+      <p id="specificParagraphId3" class="mb-3 intro-paragraph"></p>
+
+      <p id="specificParagraphId4" class="mb-3 intro-paragraph"></p>
+
+      <p id="specificParagraphId5" class="mb-3 intro-paragraph"></p>
     </div>
 
     <div class="container mt-3">
