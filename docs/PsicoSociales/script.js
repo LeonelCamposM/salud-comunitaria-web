@@ -127,11 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateAmigosDrogas(checked) {
     var imagenSrc, descripcion;
     if (checked) {
-      imagenSrc = "amigos_usan_drogas.jpg";
+      imagenSrc = "amigos_usan_drogas.png";
       descripcion =
         "Estar rodeado de amigos que consumen drogas aumenta significativamente la exposición y la posibilidad de probar o consumir regularmente, debido a la normalización del consumo en su entorno y la presión social.";
     } else {
-      imagenSrc = "sin_amigos_drogas.jpg";
+      imagenSrc = "sin_amigos_drogas.png";
       descripcion =
         "Sin la presión o exposición a las drogas de parte de su círculo cercano, es menos probable que el individuo decida experimentar o consumir sustancias.";
     }
