@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
           "Una baja confianza podría llevar al individuo a consumir sustancias como una forma de sentirse más seguro en situaciones sociales, pensando que las drogas pueden ayudarle a ´soltarse´ o encajar mejor.";
         break;
       case "2":
-        imagenSrc = "../salud-comunitaria-web/imgs/confianza_normal.png"; // Reemplazar con la ruta de tu imagen para confianza normal
+        imagenSrc = "../imgs/confianza_normal.png"; // Reemplazar con la ruta de tu imagen para confianza normal
         descripcion =
           "Con un nivel de confianza medio, el individuo suele ser consciente de los riesgos y beneficios y tiene una probabilidad menor de ceder a presiones externas o de recurrir a sustancias para sentirse mejor.";
         break;
